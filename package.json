@@ -3,31 +3,40 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "build:preload": "tsc --project tsconfig.preload.json",
-    "test":
-      "yarn build && yarn build:preload && mocha --reporter spec --require ts-node/register test/*test.ts && rm src/preload.js && rm src/index.js",
+    "test": "yarn build && yarn build:preload && mocha --reporter spec --require ts-node/register test/*test.ts && rm src/preload.js && rm src/index.js",
     "lint": "tslint --config tslint.json --project tsconfig.json --format stylish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SALT-AND-PEPPER/spectron-dialog-addon.git"
   },
-  "keywords": ["spectron", "dialog", "mock"],
-  "author": "",
+  "keywords": [
+    "spectron",
+    "dialog",
+    "mock"
+  ],
+  "contributors": [
+    {
+      "name": "klapparP",
+      "url": "https://github.com/klapparP"
+    }
+  ],
   "license": "MIT",
   "peerDependencies": {
-    "electron": "^1.7.11",
-    "spectron": "^3.7.2"
+    "electron": ">=1.7.11",
+    "spectron": ">=3.7.2"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
     "@types/mocha": "^2.2.47",
     "@types/webdriverio": "^4.8.7",
-
     "chai": "^4.1.2",
     "electron": "^1.7.11",
     "mocha": "^5.0.0",
