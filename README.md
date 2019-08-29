@@ -28,7 +28,7 @@ describe('mock showOpenDialog', function() {
 
   beforeEach(async () => {
     await app.start()
-    dialogAddon.mock([{ method: 'showOpenDialog', value: ['faked.txt'] }])
+    dialogAddon.mock([{ method: 'showOpenDialog', value: { filePaths: ['faked.txt'] } }])
   })
 
   afterEach(async () => {

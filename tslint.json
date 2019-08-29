@@ -15,7 +15,6 @@
     "ban-types": [false],
     "ordered-imports": false,
     "member-ordering": [true, { "order": "fields-first" }],
-    "no-unused-variable": true,
     "max-classes-per-file": [true, 3],
     "no-namespace": [false],
     "no-shadowed-variable": false,

@@ -11,8 +11,14 @@
         const files = ipcRenderer.sendSync('show-open-dialog');
         document.querySelector('#return-value').innerText = JSON.stringify(files);
       }
+      function showMessageBoxSync() {
+        const response = ipcRenderer.sendSync('show-message-box-sync');
+        console.log(response)
+        document.querySelector('#return-value').innerText = JSON.stringify(response);
+      }
     </script>
     <button id="show-open-dialog-button" onclick="showOpenDialog()">Show Open Dialog</button>
+    <button id="show-message-box-sync-button" onclick="showMessageBoxSync()">Show Message Box</button>
     <div id ="return-value"></div>
   </body>
 </html>
