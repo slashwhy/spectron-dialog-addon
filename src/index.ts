@@ -1,7 +1,6 @@
 import * as path from 'path'
 
-import { Application, AppConstructorOptions } from 'spectron'
-import { MenuItem } from 'electron'
+import { Application } from 'spectron'
 
 export interface DialogAddonOption {
   method: string

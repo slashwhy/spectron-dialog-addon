@@ -1,5 +1,5 @@
 {
   "name": "spectron-dialog-addon-test",
   "version": "0.0.1",
-  "main": "main.ts"
+  "main": "dist/main.js"
 }

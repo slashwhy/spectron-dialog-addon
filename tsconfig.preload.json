@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig",
-  "exclude": ["node_modules"],
-  "compilerOptions": {
-    "declaration": false,
-    "sourceMap": false,
-    "outDir": "./src"
-  }
-}
